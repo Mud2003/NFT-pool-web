@@ -182,3 +182,37 @@ nav{
 .p1stpage > img{
     width: 680px;
 }
+
+.counter-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 30px 50px;
+    width: 520px;
+}
+.counter-itm > h3{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    color: #fff;
+}
+.counter-itm > sub{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #c9bfd8;
+}
+.divider{
+    width: 1px;
+    color: #fff;
+    height: 80px;
+    /* margin: 0 40px; */
+    background-color: #c9bfd8;
+}

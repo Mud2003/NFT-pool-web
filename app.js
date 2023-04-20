@@ -23,7 +23,7 @@ window.addEventListener('resize', function() {
 
 // Screen sizes for responsive site
 
-
+// 1522px for hero
 // @media screen and (max-width: 1245px) {
 
 // }
