@@ -12,7 +12,11 @@
 nav{
     padding: 1rem 5rem;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
+    width: 100%;
+}
+.navbar.scrolled {
+    background-color:  rgba(27, 14, 45, 1); /* Change the background color when scrolled */
 }
 .nav-container{
     display: flex;
@@ -27,8 +31,6 @@ nav{
     width: auto;
     height: auto;
     max-width: 100%;
-    display: inline-block;
-    vertical-align: middle;
     cursor: pointer;
     margin: 16px;
 }
@@ -53,6 +55,7 @@ nav{
     color: #fff;
     background-color: #d331bb;
     cursor: pointer;
+    margin-left: 3rem;
 }
 /* Humburger Menu */
 .humburger{
@@ -62,7 +65,7 @@ nav{
     cursor: pointer;
 }
 .hb-menu{
-    background-color: black;
+    background-color: rgba(27, 14, 45, 0.90);
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +74,8 @@ nav{
     text-align: center;
     gap: 2rem;
     font-size: 18px;
-    position: absolute;
+    position: fixed;
+    top: 5.6rem;
     width: 100%;
     padding: 2rem 0rem;
 }
@@ -89,6 +93,15 @@ nav{
 }
 /* Responsive NavBar */
 @media screen and (max-width: 1245px) {
+    nav{
+        padding: 1rem 0;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
     .nav-links-wrapper{
         display: none;
     }
@@ -101,41 +114,41 @@ nav{
 }
 @media screen and (max-width: 768px) {
     nav {
-        padding: 1rem 2rem;
+        padding: 1rem 0rem;
     }
     .nav-container{
-        padding: 0 2.5rem;
-        margin: 0 1rem;
+        padding: 0 0rem;
+        margin: 0 0rem;
     }
 }
 @media screen and (max-width: 625px) {
     nav {
-        padding: 1rem 1rem;
+        padding: 1rem 0rem;
     }
     .nav-container{
-        padding: 0 2.5rem;
+        padding: 0 0rem;
         margin: 0 0rem;
     }
 }
 @media screen and (max-width: 458px) {
     nav {
-        padding: 1rem 1rem;
+        padding: 1rem 0rem;
     }
     .nav-container{
-        padding: 0 2rem;
+        padding: 0 0rem;
     }
 }
 @media screen and (max-width: 361px) {
     nav {
-        padding: 1rem 1rem;
+        padding: 1rem 0rem;
     }
     .nav-container{
-        padding: 0 1rem;
+        padding: 0 0rem;
     }
 }
 @media screen and (max-width: 321px) {
     nav {
-        padding: 1rem 1rem;
+        padding: 1rem 0rem;
     }
     .nav-container{
         padding: 0 0rem;
@@ -213,6 +226,596 @@ nav{
     width: 1px;
     color: #fff;
     height: 80px;
-    /* margin: 0 40px; */
     background-color: #c9bfd8;
+}
+
+/* Responsive 1st Page */
+@media screen and (max-width: 1522px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 12rem;
+        margin-left: 11.5rem;
+        gap: 1rem;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 78px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 90px;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 16px 24px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+    }
+    .p1stpage > img{
+        width: 630px;
+    }
+    .counter-wrapper{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 1413px) {
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.5rem;
+        margin: 0 3rem;
+        gap: 8rem;
+    }
+    .p1stpage {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(27, 14, 45, 0.92);
+        justify-content: space-between;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 13rem;
+        margin-left: 11.5rem;
+        gap: 2rem;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 82px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 90px;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 18px 28px;
+        width: 210px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+    }
+    .p1stpage > img{
+        width: 680px;
+        margin-left: 11.5rem;
+    }
+    .counter-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 30px 50px;
+        width: 680px;
+    }
+}
+@media screen and (max-width: 1245px) {
+    .p1stpage {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(27, 14, 45, 0.92);
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0;
+        gap: 2rem;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 82px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 90px;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 18px 28px;
+        width: 210px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+    }
+    .p1stpage > img{
+        width: 680px;
+        margin-left: 11.5rem;
+    }
+    .counter-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 30px 50px;
+        width: 680px;
+    }
+        .p1stpage > img{
+        width: 680px;
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .p1stpage {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(27, 14, 45, 0.92);
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 82px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 90px;
+        text-align: center;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 18px 28px;
+        width: 210px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+    }
+    .p1stpage > img{
+        width: 680px;
+        margin-left: 11.5rem;
+    }
+    .counter-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 30px 50px;
+        width: 680px;
+    }
+        .p1stpage > img{
+        width: 660px;
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 64px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 76px;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 12px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 14px 24px;
+        width: 210px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+    }
+    .counter-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 30px 50px;
+        width: 600px;
+    }
+    .p1stpage > img{
+    width: 600px;
+    margin-left: 0rem;
+    }
+}
+@media screen and (max-width: 625px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0;
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 60px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 72px;
+        text-align: center;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 12px 20px;
+        width: 210px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+    }
+    .counter-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 30px 50px;
+        width: 450px;
+    }
+    .p1stpage>img {
+        width: 450px;
+        margin-left: 0rem;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0rem;
+        margin: 0 2rem;
+        gap: 8rem;
+    }
+}
+@media screen and (max-width: 458px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0;
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 50px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 65px;
+        text-align: center;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 10px 18px;
+        font-size: 12px;
+        width: 180px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+    }
+    .counter-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 30px 50px;
+        width: 350px;
+    }
+    .counter-itm > h3{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        color: #fff;
+    }
+    .counter-itm > sub{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #c9bfd8;
+    }
+    .divider{
+        width: 1px;
+        color: #fff;
+        height: 80px;
+        background-color: #c9bfd8;
+    }
+    .p1stpage>img {
+        width: 350px;
+        margin-left: 0rem;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        align-items: center;
+        padding: 0 1rem;
+        margin: 0 0rem;
+        gap: 0rem;
+    }
+}
+@media screen and (max-width: 361px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 46px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 10px 18px;
+        font-size: 12px;
+        width: 180px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+    }
+    .counter-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 0.8rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 30px 50px;
+        width: 300px;
+    }
+    .counter-itm > h3{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #fff;
+    }
+    .counter-itm > sub{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 12px;
+        color: #c9bfd8;
+    }
+    .divider{
+        width: 1px;
+        color: #fff;
+        height: 80px;
+        background-color: #c9bfd8;
+    }
+    .p1stpage>img {
+        width: 300px;
+        margin-left: 0rem;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1rem;
+        margin: 0 0rem;
+        gap: 0rem;
+    }
+}
+@media screen and (max-width: 321px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .content > h1{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 46px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .content > p{
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .content > .nav-button-h1{
+        background-color: #d331bb;
+        padding: 10px 18px;
+        font-size: 12px;
+        width: 180px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+    }
+    .counter-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 0.3rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 30px 50px;
+        width: 260px;
+    }
+    .counter-itm > h3{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #fff;
+    }
+    .counter-itm > sub{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 12px;
+        color: #c9bfd8;
+    }
+    .divider{
+        width: 1px;
+        color: #fff;
+        height: 80px;
+        background-color: #c9bfd8;
+    }
+    .p1stpage>img {
+        width: 260px;
+        margin-left: 0rem;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1rem;
+        margin: 0 0rem;
+        gap: 0rem;
+    }
 }

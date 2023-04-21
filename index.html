@@ -11,7 +11,7 @@
 
 <body>
     <!-- NavBar -->
-    <nav>
+    <nav class="navbar" id="nav">
         <div class="nav-container">
             <img src="./assets/logo.png" alt="logo">
             <div class="nav-links-wrapper">
@@ -24,7 +24,7 @@
             <div class="nav-button">
                 Register
             </div>
-            <div class="humburger" onclick="showUl('hb', 'display')">
+            <div class="humburger" id="btn1" onclick="showUl('hb', 'display'), changeBackground('nav', 'background-color')">
                 <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
             </div>
         </div>
