@@ -6,6 +6,14 @@ function showUl(elementId, propertyName) {
   
     element.style[propertyName] = newValue; // Set the CSS property value to the new value
 }
+// when clicked the humburger change nav-back
+function changeBackground(elementId, propertyName) {
+    var element = document.getElementById(elementId); // Get the element by ID
+    var currentValue = element.style[propertyName]; // Get the current value of the CSS property
+    var newValue = currentValue === 'transparent' ? 'rgba(27, 14, 45, 1)' : 'rgba(27, 14, 45, 1)'; // Toggle the value to the opposite color
+  
+    element.style[propertyName] = newValue; // Set the CSS property value to the new value
+}
 
 
 // Resize the screenWidth
@@ -21,16 +29,16 @@ window.addEventListener('resize', function() {
 });
 
 
-// scroll the navbar
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    navbar.classList.add('scrolled');
-    if (window.scrollY > 0) {
-        navbar.classList.add('scrolled');
+// Change navbar background color on scroll
+window.onscroll = function() {
+    var navbar = document.getElementById("nav"); // Replace "navbar" with the ID of your navbar element
+    if (window.pageYOffset > 0) { // Check if user has scrolled
+      navbar.style.backgroundColor = "rgba(27, 14, 45, 1)"; // Replace "your-color" with your desired background color
     } else {
-        navbar.classList.remove('scrolled');
+      navbar.style.backgroundColor = "transparent"; // Reset background color if user has scrolled back to the top of the page
     }
-});
+}
+  
 
 
 
