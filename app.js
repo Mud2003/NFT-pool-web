@@ -21,21 +21,6 @@ window.addEventListener('resize', function() {
 });
 
 
-
-// Resize and change nav back-color
-function changeCSSProperty(elementId, propertyName) {
-    var element = document.getElementById(elementId); // Get the element by ID
-    var screenWidth = window.innerWidth; // Get the screen width
-    var newValue = screenWidth < 1245 ? 'transparent' ? 'rgba(27, 14, 45, 1)' : 'transparent': 'transparent'; // Set the new value based on the screen width
-  
-    element.style[propertyName] = newValue; // Set the CSS property value to the new value
-}
-window.addEventListener('resize', function() {
-    changeCSSProperty('nav', 'background-color');
-});
-
-
-
 // scroll the navbar
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
@@ -46,8 +31,6 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 });
-
-
 
 
 

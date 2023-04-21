@@ -65,7 +65,7 @@ nav{
     cursor: pointer;
 }
 .hb-menu{
-    background-color: rgba(27, 14, 45, 0.90);
+    background-color: rgba(27, 14, 45, 1);
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -78,6 +78,7 @@ nav{
     top: 5.6rem;
     width: 100%;
     padding: 2rem 0rem;
+    border-radius: 2px;
 }
 .nav-button-hm{
     display: flex;
@@ -176,11 +177,13 @@ nav{
     font-weight: 500;
     color: #fff;
     line-height: 90px;
+    /* padding-right: 2rem; */
 }
 .content > p{
     color: #fff;
     font-size: 14px;
     line-height: 28px;
+    /* padding-right: 4rem; */
 }
 .content > .nav-button-h1{
     background-color: #d331bb;
@@ -296,11 +299,13 @@ nav{
         font-weight: 500;
         color: #fff;
         line-height: 90px;
+        padding-right: 3rem;
     }
     .content > p{
         color: #fff;
         font-size: 14px;
         line-height: 28px;
+        padding-right: 3rem;
     }
     .content > .nav-button-h1{
         background-color: #d331bb;
@@ -343,6 +348,8 @@ nav{
         margin-top: 10rem;
         margin-left: 0;
         gap: 2rem;
+        justify-content: center;
+        align-items: center;
     }
     .content > h1{
         font-family: 'Clash Display', sans-serif;
@@ -350,11 +357,17 @@ nav{
         font-weight: 500;
         color: #fff;
         line-height: 90px;
+        margin-left: 11.5rem;
+        padding-right: 3rem;
     }
     .content > p{
         color: #fff;
         font-size: 14px;
         line-height: 28px;
+        margin-left: 11.5rem;
+        padding-right: 3rem;
+        justify-content: center;
+        align-items: center;
     }
     .content > .nav-button-h1{
         background-color: #d331bb;
@@ -365,6 +378,7 @@ nav{
         align-items: center;
         gap: 8px;
         color: #fff;
+        /* margin-left: 11.5rem; */
     }
     .p1stpage > img{
         width: 680px;
@@ -381,6 +395,7 @@ nav{
         margin: 2rem 0;
         padding: 30px 50px;
         width: 680px;
+        /* margin-left: 15.55rem; */
     }
         .p1stpage > img{
         width: 680px;
@@ -411,12 +426,16 @@ nav{
         color: #fff;
         line-height: 90px;
         text-align: center;
+        margin-left: 0rem;
+        padding: 0 2rem;
     }
     .content > p{
         color: #fff;
         font-size: 14px;
         line-height: 28px;
         text-align: center;
+        margin-left: 0rem;
+        padding: 0 2rem;
     }
     .content > .nav-button-h1{
         background-color: #d331bb;
@@ -429,6 +448,7 @@ nav{
         color: #fff;
         justify-content: center;
         text-align: center;
+        margin-left: 0rem;
     }
     .p1stpage > img{
         width: 680px;
