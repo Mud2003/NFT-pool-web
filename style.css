@@ -924,11 +924,17 @@ swiper-slide > img{
     }
 }
 @media screen and (max-width: 458px) {
-
+    swiper-slide > img{
+        height: 40px;
+    }
 }
 @media screen and (max-width: 361px) {
-
+    swiper-slide > img{
+        height: 30px;
+    }
 }
 @media screen and (max-width: 321px) {
-
+    swiper-slide > img{
+        height: 30px;
+    }
 }
