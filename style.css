@@ -938,3 +938,47 @@ swiper-slide > img{
         height: 30px;
     }
 }
+
+
+/* box section */
+.box-section{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 11.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.box-section > h2{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.itm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 30px 40px 40px;
+    color: #fff;
+    height: 250px;
+}
+.itm > img{
+    width: 50px;
+    margin-bottom: 1rem;
+}
+.itm > h4{
+    font-size: 20px;
+}
+.itm > p{
+    font-size: 14px;
+    line-height: 28px;
+}
