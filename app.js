@@ -6,7 +6,7 @@ function showUl(elementId, propertyName) {
   
     element.style[propertyName] = newValue; // Set the CSS property value to the new value
 }
-// when clicked the humburger change nav-back
+// when clicked the humburger change nav-back in mobile view
 function changeBackground(elementId, propertyName) {
     var element = document.getElementById(elementId); // Get the element by ID
     var currentValue = element.style[propertyName]; // Get the current value of the CSS property
@@ -43,9 +43,14 @@ window.onscroll = function() {
 
 
 
-// Screen sizes for responsive site
+// Screen sizes for responsive site___________________
 
+// @media screen and (max-width: 1522px) {
+    
+// }
+// @media screen and (max-width: 1413px) {
 
+// }
 // @media screen and (max-width: 1245px) {
 
 // }
