@@ -42,5 +42,5 @@ window.onscroll = function() {
 
 // Alert function
 function alert1() {
-    alert("Clicked button");
+    alert("Button Clicked");
 }
