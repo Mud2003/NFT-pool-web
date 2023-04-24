@@ -89,8 +89,8 @@
                             </div>
                         </div>
                         <div class="buttons">
-                            <button class="oneb" onclick="alert1()">Place A Bid</button>
-                            <button class="twob" onclick="alert1()">View Artwork</button>
+                            <button class="oneb" onclick="showPop('pop', 'display')">Place A Bid</button>
+                            <button class="twob" onclick="showPop('pop', 'display')">View Artwork</button>
                         </div>
                     </div>
                 </div>
@@ -98,6 +98,14 @@
         </div>
     </div>
 
+
+    <!-- PupUp window -->
+    <div class="popup" id="pop">
+        <div class="box">
+            <h4>You Clicked Button!</h4>
+            <button onclick="closePop('pop', 'display')">Ok</button>
+        </div>
+    </div>
 
     <!-- courasel section -->
     <section class="cr">

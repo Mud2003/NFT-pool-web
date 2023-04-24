@@ -44,3 +44,17 @@ window.onscroll = function() {
 function alert1() {
     alert("Button Clicked");
 }
+
+// PopUp Window
+function showPop(elementId, propertyName) {
+    var element = document.getElementById(elementId); // Get the element by ID
+    var newValue = 'flex';
+
+    element.style[propertyName] = newValue;
+}
+function closePop(elementId, propertyName) {
+    var element = document.getElementById(elementId); // Get the element by ID
+    var newValue = 'none';
+
+    element.style[propertyName] = newValue;
+}

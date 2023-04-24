@@ -1460,11 +1460,51 @@ nav{
 }
 
 
+/* PopUp window */
+.popup{
+    display: none;
+    width: 350px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    z-index: 3;
+    top: 3rem;
+}
+.box{
+    width: 320px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(27, 14, 45, 1);
+    border-radius: 10px;
+    gap: 2rem;
+}
+.box > h4{
+    color: #fff;
+}
+.box > button{
+    background-color: transparent;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
 
 /* courasel section */
 .cr{
     margin: 4rem 0;
-    /* z-index: -1; */
 }
 .wb-itm{
     display: flex;
