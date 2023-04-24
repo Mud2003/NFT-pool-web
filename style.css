@@ -18,7 +18,7 @@ nav{
     background-color: transparent;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 .navbar.scrolled {
     background-color:  rgba(27, 14, 45, 1); /* Change the background color when scrolled */
@@ -1464,7 +1464,7 @@ nav{
 /* courasel section */
 .cr{
     margin: 4rem 0;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .wb-itm{
     display: flex;
@@ -1504,7 +1504,6 @@ swiper-container{
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: -1;
 }
 swiper-slide{
     display: flex;
