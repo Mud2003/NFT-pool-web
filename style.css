@@ -1520,8 +1520,8 @@ nav{
         top: 4rem;
     }
     .box {
-        width: 220px;
-        height: 80px;
+        width: 230px;
+        height: 90px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1532,20 +1532,20 @@ nav{
         border-radius: 10px;
         gap: 1rem;
     }
-
-    .box>h4 {
+    .box > h4 {
         color: #fff;
         font-size: 16px;
     }
-    .box>button {
+    .box > button {
         background-color: transparent;
-        width: 100px;
+        width: 80px;
         height: 30px;
         border: 1px solid #fff;
         border-radius: 10px;
         color: #fff;
     }
 }
+
 
 /* courasel section */
 .cr{
