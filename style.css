@@ -1501,6 +1501,7 @@ nav{
     border-radius: 10px;
     color: #fff;
 }
+/* Responsive PopUp window */
 @media screen and (max-width: 361px) {
     .popup {
         display: none;
@@ -1518,7 +1519,6 @@ nav{
         z-index: 3;
         top: 4rem;
     }
-
     .box {
         width: 220px;
         height: 80px;
@@ -1537,7 +1537,6 @@ nav{
         color: #fff;
         font-size: 16px;
     }
-
     .box>button {
         background-color: transparent;
         width: 100px;
