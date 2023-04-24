@@ -40,35 +40,7 @@ window.onscroll = function() {
 }
   
 
-
-
-
-// Screen sizes for responsive site___________________
-
-// @media screen and (max-width: 1522px) {
-    
-// }
-// @media screen and (max-width: 1413px) {
-
-// }
-// @media screen and (max-width: 1245px) {
-
-// }
-// @media screen and (max-width: 991px) {
-
-// }
-// @media screen and (max-width: 768px) {
-
-// }
-// @media screen and (max-width: 625px) {
-
-// }
-// @media screen and (max-width: 458px) {
-
-// }
-// @media screen and (max-width: 361px) {
-
-// }
-// @media screen and (max-width: 321px) {
-
-// }
+// Alert function
+function alert1() {
+    alert("Clicked button");
+}

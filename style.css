@@ -200,6 +200,106 @@ nav{
     width: 680px;
 }
 
+.img-box{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    width: 680px;
+    height: 820px;
+}
+.bg-box{
+    background-image: url(./assets/dis.png);
+    height: 639px;
+    width: 400px;
+}
+.padding-t{
+    padding-top: 469px;
+}
+.white-blur{
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 1rem 1rem;
+}
+.imgs{
+    position: relative;
+    top: -15px;
+}
+.one{
+    position: relative;
+}
+.two{
+    position: relative;
+    left: -20px;
+}
+.three{
+    position: relative;
+    left: -40px;
+}
+.four{
+    position: relative;
+    left: -60px;
+}
+.two-rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-row{
+    display: flex;
+    flex-direction: column;
+}
+.left-row > h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.left-row > a{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Arial";
+    margin-bottom: 1rem;
+}
+.right-row{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.right-row > h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.right-row > p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.oneb{
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+}
+.twob{
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 16px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
 .counter-wrapper{
     display: flex;
     flex-direction: row;
@@ -378,10 +478,16 @@ nav{
         gap: 8px;
         color: #fff;
     }
+    /* jjjjjjjjjjjjjjjjjjjjjjj */
     .p1stpage > img{
         width: 680px;
         margin-left: 11.5rem;
+        display: none;
     }
+    .img-box{
+        display: flex;
+    }
+    /* jjjjjjjjjjjjjjjjjjjjjjjj */
     .counter-wrapper{
         display: flex;
         flex-direction: row;
@@ -468,6 +574,106 @@ nav{
     }
 }
 @media screen and (max-width: 768px) {
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        width: 480px;
+        height: 780px;
+    }
+    .bg-box{
+        background-image: url(./assets/dis.png);
+        height: 639px;
+        width: 400px;
+    }
+    .padding-t{
+        padding-top: 469px;
+    }
+    .white-blur{
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .imgs{
+        position: relative;
+        top: -15px;
+    }
+    .one{
+        position: relative;
+    }
+    .two{
+        position: relative;
+        left: -20px;
+    }
+    .three{
+        position: relative;
+        left: -40px;
+    }
+    .four{
+        position: relative;
+        left: -60px;
+    }
+    .two-rows{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-row > h4{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .left-row > a{
+        color: #fff;
+        font-size: 14px;
+        font-family: "Arial";
+        margin-bottom: 1rem;
+    }
+    .right-row{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .right-row > h4{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .right-row > p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .oneb{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+    }
+    .twob{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px 16px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+
     .content{
         display: flex;
         flex-direction: column;
@@ -523,6 +729,106 @@ nav{
     }
 }
 @media screen and (max-width: 625px) {
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        width: 420px;
+        height: 650px;
+    }
+    .bg-box{
+        background-image: url(./assets/dis.png);
+        height: 639px;
+        width: 400px;
+    }
+    .padding-t{
+        padding-top: 469px;
+    }
+    .white-blur{
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .imgs{
+        position: relative;
+        top: -15px;
+    }
+    .one{
+        position: relative;
+    }
+    .two{
+        position: relative;
+        left: -20px;
+    }
+    .three{
+        position: relative;
+        left: -40px;
+    }
+    .four{
+        position: relative;
+        left: -60px;
+    }
+    .two-rows{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-row > h4{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .left-row > a{
+        color: #fff;
+        font-size: 14px;
+        font-family: "Arial";
+        margin-bottom: 1rem;
+    }
+    .right-row{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .right-row > h4{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .right-row > p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .oneb{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+    }
+    .twob{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px 16px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+
     .content{
         display: flex;
         flex-direction: column;
@@ -585,6 +891,109 @@ nav{
     }
 }
 @media screen and (max-width: 458px) {
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        width: 340px;
+        height: 570px;
+    }
+    .bg-box{
+        background-image: url(./assets/dis.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        width: 320px;
+    }
+    .padding-t{
+        padding-top: 380px;
+    }
+    .white-blur{
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .imgs{
+        position: relative;
+        top: -15px;
+    }
+    .one{
+        position: relative;
+    }
+    .two{
+        position: relative;
+        left: -20px;
+    }
+    .three{
+        position: relative;
+        left: -40px;
+    }
+    .four{
+        position: relative;
+        left: -60px;
+    }
+    .two-rows{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-row > h4{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .left-row > a{
+        color: #fff;
+        font-size: 14px;
+        font-family: "Arial";
+        margin-bottom: 1rem;
+    }
+    .right-row{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .right-row > h4{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .right-row > p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .oneb{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+    }
+    .twob{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px 16px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+
     .content{
         display: flex;
         flex-direction: column;
@@ -668,6 +1077,113 @@ nav{
     }
 }
 @media screen and (max-width: 361px) {
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        width: 320px;
+        height: 550px;
+    }
+    .bg-box{
+        background-image: url(./assets/dis.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 530px;
+        width: 300px;
+    }
+    .padding-t{
+        padding-top: 380px;
+    }
+    .white-blur{
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .imgs{
+        position: relative;
+        top: -15px;
+    }
+    .one{
+        width: 40px;
+        position: relative;
+    }
+    .two{
+        width: 40px;
+        position: relative;
+        left: -20px;
+    }
+    .three{
+        width: 40px;
+        position: relative;
+        left: -40px;
+    }
+    .four{
+        width: 40px;
+        position: relative;
+        left: -60px;
+    }
+    .two-rows{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-row > h4{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .left-row > a{
+        color: #fff;
+        font-size: 12px;
+        font-family: "Arial";
+        margin-bottom: 1rem;
+    }
+    .right-row{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .right-row > h4{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .right-row > p{
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .oneb{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px 12px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+    }
+    .twob{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px 12px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+
     .content{
         display: flex;
         flex-direction: column;
@@ -751,6 +1267,113 @@ nav{
     }
 }
 @media screen and (max-width: 321px) {
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        width: 280px;
+        height: 530px;
+    }
+    .bg-box{
+        background-image: url(./assets/dis.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 510px;
+        width: 260px;
+    }
+    .padding-t{
+        padding-top: 366px;
+    }
+    .white-blur{
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .imgs{
+        position: relative;
+        top: -15px;
+    }
+    .one{
+        width: 35px;
+        position: relative;
+    }
+    .two{
+        width: 35px;
+        position: relative;
+        left: -20px;
+    }
+    .three{
+        width: 35px;
+        position: relative;
+        left: -40px;
+    }
+    .four{
+        width: 35px;
+        position: relative;
+        left: -60px;
+    }
+    .two-rows{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-row > h4{
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .left-row > a{
+        color: #fff;
+        font-size: 12px;
+        font-family: "Arial";
+        margin-bottom: 1rem;
+    }
+    .right-row{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .right-row > h4{
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .right-row > p{
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .oneb{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px 12px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+    }
+    .twob{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px 12px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+
     .content{
         display: flex;
         flex-direction: column;
@@ -1103,3 +1726,36 @@ swiper-slide > img{
         height: 300px;
     }
 }
+
+
+
+
+/* Screen sizes for responsive site______*/
+/* 
+@media screen and (max-width: 1522px) {
+    
+}
+@media screen and (max-width: 1413px) {
+
+}
+@media screen and (max-width: 1245px) {
+
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 625px) {
+
+}
+@media screen and (max-width: 458px) {
+
+}
+@media screen and (max-width: 361px) {
+
+}
+@media screen and (max-width: 321px) {
+
+} */
